@@ -1,0 +1,381 @@
+body{
+	transition: all 0.5s;
+	background-color: #fafafa;
+}
+.navbar-brand-logo{
+	height: 70px;
+}
+
+.Mainmenu .navbar-nav li a{
+	color: #fff;
+	padding: 35px;
+}
+.Mainmenu .nav .open>a, 
+.Mainmenu .nav .open>a:focus, 
+.Mainmenu .nav .open>a:hover,
+.Mainmenu .nav>li>a:focus,
+.Mainmenu .nav>li>a:hover{
+	background-color: rgb(255 255 255 / 0%);
+	color: hotpink;
+
+}
+.Mainmenu .nav>li>a{
+	position: relative;
+}
+.Mainmenu .nav>li>a::after{
+	content: "";
+	width: 0%;
+	position: absolute;
+	height: 2px;
+	left: 0;
+	bottom: 25px;
+	transition: all 0.5s;
+}
+.Mainmenu .nav>li:hover >a::after{
+	width: 100%;
+	border: 1px solid hotpink;
+	background-color: hotpink;
+}
+.dropdown.timkiem .dropdown-menu{
+	width: 250px;
+	padding: 0px;
+	border-top: 1px solid hotpink;
+}
+.dropdown.timkiem .dropdown-menu input{
+	height: 35px;
+	width: calc(100% - 40px);
+	border: 0px;
+	margin-right: 0px;
+}
+.dropdown.timkiem .dropdown-menu button{
+	margin-left: 0px;
+	width: 35px;
+	height: 35px;
+}
+/*chỉnh hiển thị nut trái phải */
+.carousel-mycontrol{
+	position: absolute;
+	top: 45%;
+	padding: 0px;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	background-color: rgba(255 255 255 / 50%);
+	border: 2px solid #fff;
+	font-size: 20;
+	line-height: 36px;
+	color: #000;
+	border-radius: 100%;
+}
+/*chỉnh vị trí nut trái phải */
+.carousel-mycontrol.left{
+	left: 15px;
+}
+
+.carousel-mycontrol.right{
+	right: 15px;
+}
+/*  can nội dung phải */
+.carousel-caption.text-right *{
+	text-align: right;
+	
+}
+.carousel-caption.text-left *{
+	text-align: left;
+	
+}
+/*chinh lai vi tri noi dung*/
+.carousel-caption{
+
+	top: 25%;
+	bottom: auto;
+}
+/*chỉnh font cho nội dung */
+.carousel-caption *{
+	font-family: serif;
+}
+.pt-40{
+	padding-top: 40px;
+}
+.pb-40{
+	padding-bottom: 40px;
+}
+.section-title{
+	font-size: 20px;
+	text-transform: uppercase;
+	font-family: serif;
+}
+.section-title.text-center span{
+	margin: auto;
+	margin-top: 10px;
+}
+.section-title span{
+	width: 40px;
+	height: 2px;
+	display: block;
+	border: 1px solid hotpink;
+	margin-top: 10px;
+}
+.section-sumary{
+	font-size: 14px;
+	color: #aaa;
+	line-height: 20px;
+}
+.section-service .thumbnail{
+	border: 0px;
+}
+.section-service .thumbnail .caption h3{
+	font-size: 18px;
+	text-transform: capitalize;
+	font-family: serif;
+}
+.section-service .thumbnail .caption p{
+	color: #aaa;
+}
+/*hien noi dung*/
+#ourclinet .carousel-inner .item{
+	min-height: 350px;
+}
+/* chỉnh vị trí hiển thị */
+#ourclinet .carousel-inner .item .carousel-caption{
+	top: 25px;
+	color: #000;
+}
+/* chỉnh kích thước */
+#ourclinet .carousel-indicators li{
+	text-indent: 0px;
+	width: 50px;
+	height: 50px;
+	position: relative;
+}
+/* chỉnh kích thước hình */
+#ourclinet .carousel-indicators li img{
+	width: 40px;
+}
+#ourclinet .carousel-indicators li p{
+	display: none;
+	position: absolute;
+	width: 100px;
+	left: -15px;
+	text-align: center;
+}
+#ourclinet .carousel-indicators li.active p{
+	display: block;
+
+}
+#ourclinet .owl-item > div {
+	cursor: pointer;
+	margin: 9px 12px;
+	transition: margin 0.4s ease;
+}
+#ourclinet .owl-item.center > div {
+	cursor: auto;
+	margin: 0;
+}
+#ourclinet .owl-item.active p{
+	display: none;
+}
+#ourclinet .owl-item.active.center p{
+	display: block;
+	font-weight: bold;
+}
+#ourclinet .owl-item.active.center img{
+	width: 100% !important;
+	margin: auto;
+	transition: width 0.5s;
+}
+#ourclinet .owl-item{
+	height: 200px;
+}
+#ourclinet .owl-item img{
+	width: 80% !important;
+	margin: auto;
+	transition: width 0.5s;
+}
+#ourclinet .owl-item li::marker{
+	display: none;
+	content: "";
+}
+.imgcontent{
+	position: relative;
+
+}
+.imgcontent:hover span{
+	display: block;
+}
+.imgcontent span{
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 280px;
+	font-size: 40px;
+	color: #fff;
+	background-color: #ff69b4c2;
+}
+
+.section-package h3{
+	font-family: serif;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: bold;
+}
+.section-package h2{
+	font-family: serif;
+	text-transform: uppercase;
+	font-size: 50px;
+	font-weight: bold;
+	color: hotpink;
+}
+.section-package p.not{
+	text-decoration: line-through;
+}
+.section-package h2 span{
+	display: block;
+	margin: auto;
+	width: 70px;
+	background-color: hotpink;
+	height: 2px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.mt-40{
+	margin-top: 40px;
+}
+.section-package .mt-40 .caption{
+	height: 400px;
+}
+.section-package .caption{
+	height: 440px;
+	position: relative;
+}
+.section-package .caption .Xemthem{
+	position: absolute;
+	bottom: 15px;
+	right: 0px;
+	width: 100%;
+	text-align: center;
+	color: hotpink;
+	text-transform: uppercase;
+}
+.section-package .caption .Xemthem span{
+	width: 25px;
+	display: inline-block;
+	margin-bottom: 4px;
+	height: 1px;
+	background: hotpink;
+	text-align: center;
+}
+.taisaochonchungtoi{
+	background: #1c171d;
+	padding: 100px 15px !important;
+
+	
+}
+.taisaochonchungtoi *{
+	color: #fff;
+}
+.taisaochonchungtoi h1{
+	font-size: 6em;
+}
+.taisaochonchungtoi p{
+	color: #aaa;
+}
+.taisaochonchungtoi .left h1,
+.taisaochonchungtoi .left h3{
+	font-family: serif;
+}
+.taisaochonchungtoi .itemcount{
+	border: 2px dashed #fff;
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	margin: auto;
+	display: block;
+	margin-top: 80px;
+}
+.taisaochonchungtoi .itemcount .count{
+	width: 70px;
+    height: 70px;
+    margin-top: 13px;
+    margin-left: 13px;
+    background: #fff;
+    color: hotpink;
+    border-radius: 100px;
+    display: block;
+    line-height: 70px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+.taisaochonchungtoi .right p{
+	text-align: center;
+	margin-top: 15px;
+	color: #fff;
+	font-size: 16px;
+	text-transform: capitalize;
+}
+.teamItem{
+	overflow: hidden;
+	position: relative;
+}
+.teamItem:hover .iconGroup{
+	right: 0px;
+}
+.teamItem .iconGroup{
+	position: absolute;
+	width: 40px;
+	height: 160px;
+	/*background-color: #aaa;*/
+	top: 20px;
+	right: -40px;
+	transition: all 0.5s; 
+	z-index: 999;
+}
+.teamItem .iconGroup a{
+	display: block;
+	text-align: center;
+	font-size: 18px;
+	color: hotpink;
+}
+.teamItem .teamItemImgContent{
+	width: 100%;
+	min-height: 350px;
+}
+.teamItem:hover .teamItemImgContent img{
+	width: 120%;
+	left: -10%;
+	top: -10%;
+	transition: all 0.5s;
+	transform: rotate(10deg);
+}
+.teamItem .teamItemImgContent img{
+	transition: all 0.5s;
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	width: 100%;
+	height: auto;
+	z-index: 1;
+}
+.teamItem .thumbnail{
+	padding: 0px;
+	border: 0px;
+}
+.teamItem:hover .thumbnail .caption{
+	bottom: 0px; 
+}
+.teamItem .thumbnail .caption{
+	transition: all 0.5s;
+	position: absolute;
+	width: 100%;
+	min-height: 80px;
+	bottom: -120px; 
+	z-index: 99;
+	text-align: center;
+	background: #cc4ef5ba;
+}
